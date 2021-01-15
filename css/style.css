@@ -1,0 +1,191 @@
+.jumbotron h1, .rayhan h2 {
+    font-size: 23px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    height: 650px;
+    background-image: url(../img/bg2.jpg);
+ 
+}
+
+.jumbotron img {
+    margin-top: 100px;
+    width: 200px;
+    border: 0px solid #222;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+} 
+
+/* Info Panel */
+.info-panel{
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+    border-radius: 12px;
+    margin-top: -200px;
+    background-color: white;
+    padding: 25px;
+}
+
+.info-panel img {
+    width: 80px;
+    height: 80px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+.info-panel h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.info-panel p {
+    font-size: 14px;
+    color: #acacac;
+    margin-top: -5px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.rayhan img {
+    margin-top: 70px;
+    width: 200px;
+    height: 230px;
+    border: 0px solid #666;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+}
+
+.rayhan {
+    min-height: 100px;
+
+}
+
+section .rayhan{
+    min-height: 950px;
+}
+
+section {
+    min-height: 600px;
+}
+
+.about p {
+    text-align: justify;
+}
+
+.contact {
+    min-height: 550px;
+    text-align: left;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.contact button{
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+.about {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.about, .contact {
+    padding-top: 40px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 11px;
+}
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+    margin-top: 70%;
+    margin-right: 5px;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+
+/* DEKSTOP VERSION */
+@media (min-width: 992px) {
+    .jumbotron {
+        height: 650px;
+        background-image: url(../img/bg2.jpg);
+        background-size: cover;
+    }
+
+    .info-panel{
+        height: 140px;
+        box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+        border-radius: 12px;
+        margin-top: -200px;
+        background-color: white;
+        padding: 25px;
+    }
+    
+    .info-panel img {
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+    
+    .info-panel h4 {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    
+    .info-panel p {
+        font-size: 14px;
+        color: #acacac;
+        margin-top: -5px;
+        font-weight: 200;
+    }
+
+    .rayhan img {
+        margin-top: 30px;
+    }
+
+    footer p {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .lightbox img {
+        /** Pad the lightbox image */
+        max-width: 90%;
+        max-height: 80%;
+        margin-top: 7%;
+    }
+}
